@@ -58,6 +58,61 @@ def plot_countplots(data, coluna_hue, grupos, figsize=(12, 8)):
     plt.tight_layout()
 
 
+def plot_matriz_confusao(y_true_teste, y_pred_teste, group_names=None,
+                         categories='auto', count=True, cbar=True,
+                         xyticks=True, sum_stats=True, figsize=None,
+                         cmap='viridis', title=None):
+
+    cf = confusion_matrix(y_true_teste, y_pred_teste)
+
+    blanks = ['' for i in range(cf.size)]
+
+    if group_names and len(group_names) == cf.size:
+        group_labels = ["{}\n".format(value) for value in group_names]
+    else:
+        group_labels = blanks
+
+    if count:
+        group_counts = ["{0:0.0f}\n".format(value) for value in cf.flatten()]
+    else:
+        group_counts = blanks
+
+    box_labels = [f"{v1}{v2}".strip()
+                  for v1, v2 in zip(group_labels, group_counts)]
+    box_labels = np.asarray(box_labels).reshape(cf.shape[0], cf.shape[1])
+
+    if sum_stats:
+        accuracy = accuracy_score(y_true_teste, y_pred_teste)
+        precision = precision_score(y_true_teste, y_pred_teste)
+        recall = recall_score(y_true_teste, y_pred_teste)
+        f1_score_metric = f1_score(y_true_teste, y_pred_teste)
+
+        stats_text = "Acurácia = {:0.3f}\nPrecisão = {:0.3f}\nRecall = {:0.3f}\nF1 Score = {:0.3f}".format(
+            accuracy, precision, recall, f1_score_metric)
+    else:
+        stats_text = ""
+
+    if figsize is None:
+        figsize = plt.rcParams.get('figure.figsize')
+
+    if xyticks is False:
+        categories = False
+
+    plt.figure(figsize=figsize)
+    sns.set(font_scale=1.4)  # for label size
+    sns.heatmap(cf, annot=box_labels, fmt="", cmap=cmap, cbar=cbar,
+                xticklabels=categories, yticklabels=categories)
+    plt.ylabel('Valores verdadeiros', fontsize=17)
+    
+    # Adicione as métricas no lado direito do gráfico
+    plt.text(cf.shape[1] + 0.7, cf.shape[0] / 2.0, stats_text, ha='left', va='center', fontsize=16)
+
+    plt.xlabel('Valores preditos', fontsize=17)
+
+    if title:
+        plt.title(title, fontsize=20, pad=20)
+    
+
 def adicionar_estatisticas(ax, dados, metrica, texto_y, cor):
     valores_estatisticos = dados.groupby(
         'Churn')[metrica].agg(['mean', 'median', 'min', 'max'])
