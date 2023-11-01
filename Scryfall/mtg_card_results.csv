@@ -1,0 +1,10 @@
+Name,Set Name,Mana Cost,Type,Oracle Text,Foil,Price (USD)
+Dark Confidant,Double Masters,{1}{B},Creature — Human Wizard,"At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its mana value.",nonfoil,11.75
+Lightning Bolt,Double Masters 2022,{R},Instant,Lightning Bolt deals 3 damage to any target.,nonfoil,1.33
+Pithing Needle,Double Masters 2022,{1},Artifact,"As Pithing Needle enters the battlefield, choose a card name.
+Activated abilities of sources with the chosen name can't be activated unless they're mana abilities.",nonfoil,1.16
+Opt,Core Set 2021,{U},Instant,"Scry 1.
+Draw a card.",nonfoil,0.07
+Impulse,Dominaria United,{1}{U},Instant,Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.,nonfoil,0.08
+"Arahbo, Roar of the World",Commander 2017,{3}{G}{W},Legendary Creature — Cat Avatar,"Eminence — At the beginning of combat on your turn, if Arahbo, Roar of the World is in the command zone or on the battlefield, another target Cat you control gets +3/+3 until end of turn.
+Whenever another Cat you control attacks, you may pay {1}{G}{W}. If you do, it gains trample and gets +X/+X until end of turn, where X is its power.",foil,7.62
