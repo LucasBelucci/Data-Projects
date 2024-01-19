@@ -1,7 +1,6 @@
 import requests
 import csv
 import re
-import collections
 
 
 def search(query, type):
@@ -415,6 +414,10 @@ if __name__ == '__main__':
     else:
         print("Card not found or an error occurred.")
         '''
+
+
+# FALTA DEFINIR O TIPO DE DECK QUE ESTÁ SENDO ENVIADO (CMD OU 60 CARTAS), ALÉM DE VERIFICAR SE TEM COMPANION OU NÃO
+
 
 # Number of lands, counting MDFCs partially = 19.59 + 1.90 * average mana value – 0.28 *  + 0.27 * companion count.
 
