@@ -1,49 +1,19 @@
 Quantity,Name,Set Name,Mana Cost,Type,Oracle Text,Foil,Price (USD)
-1,"Boseiju, Who Endures",Kamigawa: Neon Dynasty,,Legendary Land,"{T}: Add {G}.
-Channel — {1}{G}, Discard Boseiju, Who Endures: Destroy target artifact, enchantment, or nonbasic land an opponent controls. That player may search their library for a land card with a basic land type, put it onto the battlefield, then shuffle. This ability costs {1} less to activate for each legendary creature you control.",nonfoil,39.18
-4,Ziatora's Proving Ground,Streets of New Capenna,,Land — Swamp Mountain Forest,"({T}: Add {B}, {R}, or {G}.)
-Ziatora's Proving Ground enters the battlefield tapped.
-Cycling {3} ({3}, Discard this card: Draw a card.)",nonfoil,10.92
-1,"Eiganjo, Seat of the Empire",Kamigawa: Neon Dynasty,,Legendary Land,"{T}: Add {W}.
-Channel — {2}{W}, Discard Eiganjo, Seat of the Empire: It deals 4 damage to target attacking or blocking creature. This ability costs {1} less to activate for each legendary creature you control.",nonfoil,6.65
-4,Forest,Murders at Karlov Manor,,Basic Land — Forest,({T}: Add {G}.),foil,N/A
-1,Island,Murders at Karlov Manor,,Basic Land — Island,({T}: Add {U}.),foil,N/A
-4,Jetmir's Garden,Streets of New Capenna,,Land — Mountain Forest Plains,"({T}: Add {R}, {G}, or {W}.)
-Jetmir's Garden enters the battlefield tapped.
-Cycling {3} ({3}, Discard this card: Draw a card.)",nonfoil,27.30
-1,Mirrex,Phyrexia: All Will Be One,,Land — Sphere,"{T}: Add {C}.
-{T}: Add one mana of any color. Activate only if Mirrex entered the battlefield this turn.
-{3}, {T}: Create a 1/1 colorless Phyrexian Mite artifact creature token with toxic 1 and ""This creature can't block."" (Players dealt combat damage by it also get a poison counter.)",nonfoil,9.11
-2,Swamp,Murders at Karlov Manor,,Basic Land — Swamp,({T}: Add {B}.),foil,N/A
-3,Plains,Murders at Karlov Manor,,Basic Land — Plains,({T}: Add {W}.),foil,N/A
-4,Spara's Headquarters,Streets of New Capenna,,Land — Forest Plains Island,"({T}: Add {G}, {W}, or {U}.)
-Spara's Headquarters enters the battlefield tapped.
-Cycling {3} ({3}, Discard this card: Draw a card.)",nonfoil,18.02
-2,Go for the Throat,March of the Machine Commander,{1}{B},Instant,Destroy target nonartifact creature.,nonfoil,1.02
-3,Up the Beanstalk,Wilds of Eldraine,{1}{G},Enchantment,"When Up the Beanstalk enters the battlefield and whenever you cast a spell with mana value 5 or greater, draw a card.",nonfoil,3.09
+3,Up the Beanstalk,Wilds of Eldraine,{1}{G},Enchantment,"When Up the Beanstalk enters the battlefield and whenever you cast a spell with mana value 5 or greater, draw a card.",nonfoil,2.19
 4,Topiary Stomper,The Lost Caverns of Ixalan Commander,{1}{G}{G},Creature — Plant Dinosaur,"Vigilance
 When Topiary Stomper enters the battlefield, search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
-Topiary Stomper can't attack or block unless you control seven or more lands.",nonfoil,3.91
-1,Chrome Host Seedshark,March of the Machine,{2}{U},Creature — Phyrexian Shark,"Flying
-Whenever you cast a noncreature spell, incubate X, where X is that spell's mana value. (Create an Incubator token with X +1/+1 counters on it and ""{2}: Transform this artifact."" It transforms into a 0/0 Phyrexian artifact creature.)",nonfoil,3.66
-4,Archangel of Wrath,Dominaria United,{2}{W}{W},Creature — Angel,"Kicker {B} and/or {R} (You may pay an additional {B} and/or {R} as you cast this spell.)
-Flying, lifelink
-When Archangel of Wrath enters the battlefield, if it was kicked, it deals 2 damage to any target.
-When Archangel of Wrath enters the battlefield, if it was kicked twice, it deals 2 damage to any target.",nonfoil,0.47
+Topiary Stomper can't attack or block unless you control seven or more lands.",nonfoil,3.54
+1,Virtue of Persistence // Locthwain Scorn,Wilds of Eldraine,{5}{B}{B} // {1}{B},Enchantment // Sorcery — Adventure,"At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. // Target creature gets -3/-3 until end of turn. You gain 2 life.",nonfoil,18.42
+1,Accursed Witch // Infectious Curse,Shadows over Innistrad,{3}{B} // ,Creature — Human Shaman // Enchantment — Aura Curse,"Spells your opponents cast that target Accursed Witch cost {1} less to cast.
+When Accursed Witch dies, return it to the battlefield transformed under your control attached to target opponent. // Enchant player
+Spells you cast that target enchanted player cost {1} less to cast.
+At the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.",nonfoil,0.28
+1,"Alrund, God of the Cosmos // Hakka, Whispering Raven",Kaldheim,{3}{U}{U} // {1}{U},Legendary Creature — God // Legendary Creature — Bird,"Alrund gets +1/+1 for each card in your hand and each foretold card you own in exile.
+At the beginning of your end step, choose a card type, then reveal the top two cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest on the bottom of your library in any order. // Flying
+Whenever Hakka, Whispering Raven deals combat damage to a player, return it to its owner's hand, then scry 2.",nonfoil,0.27
+1,Glasspool Mimic // Glasspool Shore,Zendikar Rising,{2}{U} // ,Creature — Shapeshifter Rogue // Land,"You may have Glasspool Mimic enter the battlefield as a copy of a creature you control, except it's a Shapeshifter Rogue in addition to its other types. // Glasspool Shore enters the battlefield tapped.
+{T}: Add {U}.",nonfoil,5.51
 3,Invasion of Zendikar // Awakened Skyclave,March of the Machine,{3}{G} // ,Battle — Siege // Creature — Elemental,"(As a Siege enters, choose an opponent to protect it. You and others can attack it. When it's defeated, exile it, then cast it transformed.)
 When Invasion of Zendikar enters the battlefield, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle. // Vigilance, haste
 As long as Awakened Skyclave is on the battlefield, it's a land in addition to its other types.
-{T}: Add one mana of any color.",nonfoil,0.47
-4,Sunfall,March of the Machine,{3}{W}{W},Sorcery,"Exile all creatures. Incubate X, where X is the number of creatures exiled this way. (Create an Incubator token with X +1/+1 counters on it and ""{2}: Transform this artifact."" It transforms into a 0/0 Phyrexian artifact creature.)",nonfoil,9.91
-4,Leyline Binding,Dominaria United,{5}{W},Enchantment,"Flash
-Domain — This spell costs {1} less to cast for each basic land type among lands you control.
-When Leyline Binding enters the battlefield, exile target nonland permanent an opponent controls until Leyline Binding leaves the battlefield.",nonfoil,11.20
-3,"Atraxa, Grand Unifier",Phyrexia: All Will Be One,{3}{G}{W}{U}{B},Legendary Creature — Phyrexian Angel,"Flying, vigilance, deathtouch, lifelink
-When Atraxa, Grand Unifier enters the battlefield, reveal the top ten cards of your library. For each card type, you may put a card of that type from among the revealed cards into your hand. Put the rest on the bottom of your library in a random order. (Artifact, battle, creature, enchantment, instant, land, planeswalker, and sorcery are card types.)",nonfoil,21.76
-4,Herd Migration,Dominaria United,{6}{G},Sorcery,"Domain — Create a 3/3 green Beast creature token for each basic land type among lands you control.
-{1}{G}, Discard Herd Migration: Search your library for a basic land card, reveal it, put it into your hand, then shuffle. You gain 3 life.",nonfoil,0.30
-1,"Nissa, Ascended Animist",Phyrexia: All Will Be One,{3}{G}{G}{G/P}{G/P},Legendary Planeswalker — Nissa,"Compleated ({G/P} can be paid with {G} or 2 life. For each {G/P} paid with life, this planeswalker enters with two fewer loyalty counters.)
-+1: Create an X/X green Phyrexian Horror creature token, where X is Nissa, Ascended Animist's loyalty.
-−1: Destroy target artifact or enchantment.
-−7: Until end of turn, creatures you control get +1/+1 for each Forest you control and gain trample.",nonfoil,7.45
-2,Virtue of Persistence // Locthwain Scorn,Wilds of Eldraine,{5}{B}{B} // {1}{B},Enchantment // Sorcery — Adventure,"At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. // Target creature gets -3/-3 until end of turn. You gain 2 life.",nonfoil,17.95
+{T}: Add one mana of any color.",nonfoil,0.53

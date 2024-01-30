@@ -99,6 +99,7 @@ def save_to_csv(cards, filename, quantity):
 
         for i, card in zip(quantity, cards):
             # print(card['layout'])
+
             if card['layout'] in ['adventure', 'transform', 'modal_dfc']:
                 # print(card['card_faces'])
                 # if card['type_line'] is 'Land':
@@ -145,21 +146,23 @@ def save_to_csv(cards, filename, quantity):
 
 
 def pips(cards, quantity):
+
     U = 0  # Blue
     W = 0  # White
     B = 0  # Black
     R = 0  # Red
     G = 0  # Green
     C = 0  # Generic
-    ramp = 0  # Number of cheap ramp spells (cmc = 2 or less)
-    draw = 0  # Number of cheap draw spells (cmc = 2 or less)
-    total = 0
-    mdfc = 0
 
+    ramp = 0
+    draw = 0
+    mdfc = 0
     land = 0
-    adventure = 0
-    lista = []
+    adventure = 0  # Number of cheap ramp/draw spells (cmc = 2 or less)
+    total = 0
     i = 0
+
+    lista = []
 
     cheap_draw = ['draw a card', 'draw two cards', 'draw three cards', 'draws cards',
                   'draws two cards', 'draws three cards', 'look', 'put', 'your hand']
@@ -170,11 +173,19 @@ def pips(cards, quantity):
 
     non_creature = ['Instant', 'Sorcery', 'Enchantment', 'Artifact', 'Land']
 
+    # RAMP
+    oracle_creature = ['Add {U}', 'Add {W}', 'Add {B}', 'Add {F}', 'Add {G}', 'Add {C}', 'Search',
+                       'your library', 'land', 'basic', 'put a creature card with from your hand onto the battlefield']
+
+    # DRAW
+
+    oracle_creature_draw = ["draw a card", "draw two cards",
+                            "draw three cards", "draws cards", "draws two cards", "draws three cards", 'look', 'put', 'your hand']
+
     # print(len(cards))
     # print(cards)
     for card in cards:
         # print(card.get('name'))
-        oracle = card.get('oracle_text')
         # print(card)
         # print(f'oracle: ', oracle)
         # print(f'type: ', card.get('type_line'))
@@ -251,9 +262,6 @@ def pips(cards, quantity):
         # print('quantity: ', quantity)
         # print('quantity: ', quantity[i])
 
-        # RAMP
-        oracle_creature = ['Add {U}', 'Add {W}', 'Add {B}', 'Add {F}', 'Add {G}', 'Add {C}', 'Search',
-                           'your library', 'land', 'basic', 'put a creature card with from your hand onto the battlefield']
         # print(card.get('name'))
         # print(f'ACHEI {card.get("name")}')
         # print(f'ACHEI {card.get("layout")}')
@@ -281,11 +289,6 @@ def pips(cards, quantity):
                     # print(f'Localizei um non-creature cheap ramp {quantity[i]} x {card.get("name")}')
                     ramp += quantity[i]
                     # print('ramp: ', ramp)
-
-        # DRAW
-
-        oracle_creature_draw = ["draw a card", "draw two cards",
-                                "draw three cards", "draws cards", "draws two cards", "draws three cards", 'look', 'put', 'your hand']
 
         if 'Creature' in card.get('type_line'):
             # print('ACHEI DRAW')
@@ -326,7 +329,10 @@ if __name__ == '__main__':
     # print(f'input: {search_query.replace(",","").replace(" ", "+").lower()}')
     # separadas = search_query.replace(" ", "+").lower()
     # print(len(separadas))
-
+    print('Insira sua decklist SEM sideboard')
+    format = input('Tipo de deck inserido:')
+    if format == 'cmd':
+        cmd = input('Comandante:')
     U = 0  # Blue
     W = 0  # White
     B = 0  # Black
@@ -339,7 +345,7 @@ if __name__ == '__main__':
     ramp = 0
     draw = 0
 
-    arquivo = 'decklist.txt'
+    arquivo = input('insira o nome do arquivo com .txt no final:')
     cartas, quantidade = ler_arquivo(arquivo)
     # print('Cartas: ', len(cartas))
     # print('Quantidade: ', len(quantidade))
@@ -396,10 +402,15 @@ if __name__ == '__main__':
 
         csv_filename = 'mtg_card_results.csv'
         save_to_csv(all_results, csv_filename, quantidade)
-        print(
-            # f'Numero de lands: {19.59 + 1.90*average_mana - 0.28*(n_ramp+n_draw)}')
-            f'Numero de lands: {19.59 + 1.90*average_mana - 0.28*soma}')
-        # 23.657700000000002
+        if format == 'cmd':
+            print(
+                # f'Numero de lands: {19.59 + 1.90*average_mana - 0.28*(n_ramp+n_draw)}')
+                f'Formato:{format}\nNumero de lands: {round(31.42 + 3.13*average_mana - 0.28*soma, 2)}')
+        else:
+            print(
+                # f'Numero de lands: {19.59 + 1.90*average_mana - 0.28*(n_ramp+n_draw)}')
+                f'Numero de lands: {round(19.59 + 1.90*average_mana - 0.28*soma, 2)}')
+            # 23.657700000000002
         print(f'Search results saved to {csv_filename}')
     else:
         print('No cards found or an error occurred.')
