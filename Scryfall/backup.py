@@ -176,6 +176,8 @@ def pips(cards, quantity):
     for card in cards:
         # print(card.get('name'))
         oracle = card.get('oracle_text')
+        lang = card.get('lang')
+        print(f'lang: {lang}')
         # print(card)
         # print(f'oracle: ', oracle)
         # print(f'type: ', card.get('type_line'))

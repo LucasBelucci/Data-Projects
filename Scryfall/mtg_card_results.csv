@@ -1,19 +1,19 @@
 Quantity,Name,Set Name,Mana Cost,Type,Oracle Text,Foil,Price (USD)
-3,Up the Beanstalk,Wilds of Eldraine,{1}{G},Enchantment,"When Up the Beanstalk enters the battlefield and whenever you cast a spell with mana value 5 or greater, draw a card.",nonfoil,2.19
+3,Up the Beanstalk,Wilds of Eldraine,{1}{G},Enchantment,"When Up the Beanstalk enters the battlefield and whenever you cast a spell with mana value 5 or greater, draw a card.",nonfoil,1.42
 4,Topiary Stomper,The Lost Caverns of Ixalan Commander,{1}{G}{G},Creature — Plant Dinosaur,"Vigilance
 When Topiary Stomper enters the battlefield, search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
-Topiary Stomper can't attack or block unless you control seven or more lands.",nonfoil,3.54
-1,Virtue of Persistence // Locthwain Scorn,Wilds of Eldraine,{5}{B}{B} // {1}{B},Enchantment // Sorcery — Adventure,"At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. // Target creature gets -3/-3 until end of turn. You gain 2 life.",nonfoil,18.42
+Topiary Stomper can't attack or block unless you control seven or more lands.",nonfoil,2.43
+1,Virtue of Persistence // Locthwain Scorn,Wilds of Eldraine,{5}{B}{B} // {1}{B},Enchantment // Sorcery — Adventure,"At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. // Target creature gets -3/-3 until end of turn. You gain 2 life.",nonfoil,15.49
 1,Accursed Witch // Infectious Curse,Shadows over Innistrad,{3}{B} // ,Creature — Human Shaman // Enchantment — Aura Curse,"Spells your opponents cast that target Accursed Witch cost {1} less to cast.
 When Accursed Witch dies, return it to the battlefield transformed under your control attached to target opponent. // Enchant player
 Spells you cast that target enchanted player cost {1} less to cast.
-At the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.",nonfoil,0.28
+At the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.",nonfoil,0.26
 1,"Alrund, God of the Cosmos // Hakka, Whispering Raven",Kaldheim,{3}{U}{U} // {1}{U},Legendary Creature — God // Legendary Creature — Bird,"Alrund gets +1/+1 for each card in your hand and each foretold card you own in exile.
 At the beginning of your end step, choose a card type, then reveal the top two cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest on the bottom of your library in any order. // Flying
-Whenever Hakka, Whispering Raven deals combat damage to a player, return it to its owner's hand, then scry 2.",nonfoil,0.27
+Whenever Hakka, Whispering Raven deals combat damage to a player, return it to its owner's hand, then scry 2.",nonfoil,0.48
 1,Glasspool Mimic // Glasspool Shore,Zendikar Rising,{2}{U} // ,Creature — Shapeshifter Rogue // Land,"You may have Glasspool Mimic enter the battlefield as a copy of a creature you control, except it's a Shapeshifter Rogue in addition to its other types. // Glasspool Shore enters the battlefield tapped.
-{T}: Add {U}.",nonfoil,5.51
+{T}: Add {U}.",nonfoil,4.61
 3,Invasion of Zendikar // Awakened Skyclave,March of the Machine,{3}{G} // ,Battle — Siege // Creature — Elemental,"(As a Siege enters, choose an opponent to protect it. You and others can attack it. When it's defeated, exile it, then cast it transformed.)
 When Invasion of Zendikar enters the battlefield, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle. // Vigilance, haste
 As long as Awakened Skyclave is on the battlefield, it's a land in addition to its other types.
-{T}: Add one mana of any color.",nonfoil,0.53
+{T}: Add one mana of any color.",nonfoil,0.57
