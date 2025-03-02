@@ -1,4 +1,4 @@
-Data-Projects
+# Data-Projects
 
 This repository is dedicated to storing and showcasing my attempts to solve Kaggle challenges and other activities using datasets for machine learning techniques.
 
